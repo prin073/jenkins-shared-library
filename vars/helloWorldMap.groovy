@@ -15,6 +15,6 @@ def call(Map args = [:]) {
     // Above will work but it's better to assign some default values
 
     def name = args.get('name', 'Unknown')
-    def weekOfDay = args.weekOfDay('weekOfDay', 'Some day')
+    def weekOfDay = args.get('weekOfDay', 'Some day')
     sh "echo Hello World! My name is ${name} and today is ${weekOfDay}"
 }

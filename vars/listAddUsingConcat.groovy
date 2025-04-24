@@ -6,7 +6,7 @@
 def call(String valueToAdd, List args = []) {
 //    def newList = args
     echo "Before: ${args}"
-    newList.add(valueToAdd) //1. using method
+    args.add(valueToAdd) //1. using method
     echo "After: ${args}"
 
 }

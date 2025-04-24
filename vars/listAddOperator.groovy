@@ -1,8 +1,7 @@
 
-def call(List args = [], String valueToAdd) {
-     args >> "${valueToAdd}" // 2. using operator
+def call(String valueToAdd, List args = []) {
 
-    args.each { arg ->
-        println("${arg}")  // Use double quotes forLoop GString
-    }
+//    def newList = items.collect() // copy list to avoid mutation
+     args >> "${valueToAdd}" // 2. using operator
+    echo "newList: ${args}"
 }

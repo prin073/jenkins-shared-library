@@ -15,7 +15,5 @@ def call(String valueToAdd, List args = []) {
 
 def call(String valueToAdd, List args = []) {
     def newList = args + [valueToAdd] // Concatenate the valueToAdd to args
-    newList.each { arg ->
-        println("${arg}")  // This will print values in the non-CPS context
-    }
+    echo "newList: ${newList}"
 }

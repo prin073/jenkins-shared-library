@@ -1,4 +1,5 @@
 
+@NonCPS
 def call(String valueToAdd, List args = []) {
     args.add(valueToAdd) //1. using method
 

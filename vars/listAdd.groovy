@@ -1,9 +1,10 @@
 
 @NonCPS
 def call(String valueToAdd, List args = []) {
-    args.add(valueToAdd) //1. using method
+    def newList = args
+    newList.add(valueToAdd) //1. using method
 
-    args.each { arg ->
+    newList.each { arg ->
         println("${arg}")  // Use double quotes forLoop GString
     }
 }

@@ -1,7 +1,6 @@
 
 def call(String valueToRemove, List args = []) {
+    echo "Before: ${args}"
     args.remove(valueToRemove)
-    args.each { arg ->
-        println("${arg}")  // Use double quotes forLoop GString
-    }
+    echo "After: ${args}"
 }

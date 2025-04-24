@@ -1,7 +1,7 @@
 
 def call(String valueToAdd, List args = []) {
 
-//    def newList = items.collect() // copy list to avoid mutation
+     echo "Before: ${args}"
      args << "${valueToAdd}" // 2. using operator
-    echo "newList: ${args}"
+     echo "After: ${args}"
 }

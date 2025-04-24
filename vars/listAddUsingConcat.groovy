@@ -14,6 +14,7 @@ def call(String valueToAdd, List args = []) {
 */
 
 def call(String valueToAdd, List args = []) {
+    echo "Before: ${args}"
     def newList = args + [valueToAdd] // Concatenate the valueToAdd to args
-    echo "newList: ${newList}"
+    echo "after: ${newList}"
 }

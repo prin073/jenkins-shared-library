@@ -1,5 +1,5 @@
 
-def call(List args = [], String valueToAdd) {
+def call(String valueToAdd, List args = []) {
     args.add(valueToAdd) //1. using method
 
     args.each { arg ->

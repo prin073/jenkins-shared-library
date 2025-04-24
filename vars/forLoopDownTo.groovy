@@ -1,7 +1,7 @@
 // by pass CPS
 
 //Use an explicit closure with .downto()
-@NonCPS
+//@NonCPS
 def countDown() {
     // 5.downto(1)  // → [5, 4, 3, 2, 1]
 

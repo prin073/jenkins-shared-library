@@ -1,13 +1,14 @@
 
-/*
+//This won't work anymore with newer jenkins version. Jenkins Sandbox has tighten it's rules
+
 def call(Map args = [:]) {
     sh "echo Hello World! My name is ${args.name} and today is ${args.weekOfDay}"
 }
 
-This won't work anymore with newer jenkins version. Jenkins Sandbox has tighten it's rules
-*/
 
 
+/*
+// new and accepted version
 def call(Map args = [:]) {
 //    def name = args.name
 //    def weekOfDay = args.weekOfDay
@@ -18,3 +19,4 @@ def call(Map args = [:]) {
     def weekOfDay = args.get('weekOfDay', 'Some day')
     sh "echo Hello World! My name is ${name} and today is ${weekOfDay}"
 }
+*/

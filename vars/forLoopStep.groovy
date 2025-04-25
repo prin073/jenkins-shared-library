@@ -12,7 +12,7 @@ def call() {
 */
 
 def call() {
-
+    //closure syntax works
     //1..5 step 2  // → [1, 3, 5]
     1.step(6, 2) {i ->
         echo "Hello ${i}"

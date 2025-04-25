@@ -5,6 +5,7 @@
 def countDown() {
     // 5.downto(1)  // → [5, 4, 3, 2, 1]
 
+    //closure syntax works
     5.downto(1) { i ->
         println("Hello ${i}")
     }
